@@ -1,7 +1,7 @@
 
 # 🌐 MCP Text Insight – Frontend
 
-A modern and responsive React-based frontend for interacting with the **MCP-Compliant Text Insight API**. This app enables users to input textual feedback and receive **summarized** and/or **classified** insights, all wrapped in a user-friendly interface.
+React-based frontend for interacting with the **MCP-Compliant Text Insight API**. This app enables users to input textual feedback and receive **summarized** and/or **classified** insights, all wrapped in a user-friendly interface.
 
 ---
 
