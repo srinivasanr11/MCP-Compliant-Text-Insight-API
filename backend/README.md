@@ -149,6 +149,3 @@ This API follows a strict schema defined using [Pydantic](https://pydantic.dev).
 ---
 
 
-## 📄 License
-
-Licensed under the MIT License.
