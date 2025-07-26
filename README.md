@@ -13,4 +13,6 @@ A lightweight and modular **FastAPI-based service** for **summarizing** and **cl
 - ⚡ FastAPI backend with clean and modular codebase
 - 📄 Includes example request/response JSON files
 
+The more features is currently under development and is expected to be completed within the next few days.
+
 ---
