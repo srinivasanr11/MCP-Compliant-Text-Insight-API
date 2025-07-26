@@ -1,0 +1,11 @@
+{ 
+  "model_context": { 
+    "task": "text_analysis", 
+    "intent": "classification", 
+    "user_role": "end_user", 
+    "language": "en" 
+  }, 
+  "input": { 
+    "text": "It crashes every time I try to open a PDF. This needs to be fixed immediately." 
+  } 
+}

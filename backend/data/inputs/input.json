@@ -1,0 +1,15 @@
+{ 
+  "model_context": { 
+    "task": "text_analysis", 
+    "intent": "summarization", 
+    "user_role": "customer", 
+    "language": "en" 
+  }, 
+  "input": { 
+    "text": "I really like the new UI update, but I’m having trouble finding the profile settings. It used to be more obvious before." 
+  } 
+}
+
+
+
+

@@ -1,0 +1,14 @@
+{
+    "output": {
+        "summary": null,
+        "category": null,
+        "confidence": null,
+        "message": "Intent 'emotion-detection' is not supported in this version."
+    },
+    "mcp_response": {
+        "task": "text_analysis",
+        "intent": "emotion-detection",
+        "output_type": "error",
+        "generated_by": "rule-engine-v1"
+    }
+}

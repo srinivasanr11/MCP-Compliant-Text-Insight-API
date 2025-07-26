@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "e66e76f0-39f6-4cb6-8963-f47eb4944587",
+		"name": "mcp_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46403028",
+		"_collection_link": "https://www.postman.com/joint-operations-meteorologist-28459799/mcp-api/collection/ry68wud/mcp-api?action=share&source=collection_link&creator=46403028"
+	},
+	"item": [
+		{
+			"name": "summarization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"model_context\": { \r\n    \"task\": \"text_analysis\", \r\n    \"intent\": \"summarization\", \r\n    \"user_role\": \"customer\", \r\n    \"language\": \"en\" \r\n  }, \r\n  \"input\": { \r\n    \"text\": \"I really like the new UI update, but I’m having trouble finding the profile settings. It used to be more obvious before.\" \r\n  } \r\n} \r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mcp/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mcp",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"model_context\": { \r\n    \"task\": \"text_analysis\", \r\n    \"intent\": \"classification\", \r\n    \"user_role\": \"end_user\", \r\n    \"language\": \"en\" \r\n  }, \r\n  \"input\": { \r\n    \"text\": \"It crashes every time I try to open a PDF. This needs to be fixed immediately.\" \r\n  } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mcp/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mcp",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "summarization + classification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model_context\": {\r\n    \"task\": \"text_analysis\",\r\n    \"intent\": \"summarization + classification\",\r\n    \"user_role\": \"user\",\r\n    \"language\": \"en\"\r\n  },\r\n  \"input\": {\r\n    \"text\": \"The dark mode feature is absolutely brilliant! It's easier on the eyes and looks modern.\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mcp/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mcp",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model_context\": {\r\n    \"task\": \"text_analysis\",\r\n    \"intent\": \"emotion-detection\",\r\n    \"user_role\": \"end_user\",\r\n    \"language\": \"en\"\r\n  },\r\n  \"input\": {\r\n    \"text\": \"I guess the app is okay, but I feel confused using the new settings page.\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mcp/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mcp",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unsupported",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model_context\": {\r\n    \"task\": \"text_analysis\",\r\n    \"intent\": \"emotion-detection\",\r\n    \"user_role\": \"end_user\",\r\n    \"language\": \"en\"\r\n  },\r\n  \"input\": {\r\n    \"text\": \"I guess the app is okay, but I feel confused using the new settings page.\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mcp/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mcp",
+						"process"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

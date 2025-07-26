@@ -1,0 +1,17 @@
+{
+    "output": {
+        "summary": [
+            "User is struggling to find the profile settings.",
+            "Usability Issue"
+        ],
+        "category": null,
+        "confidence": null,
+        "message": null
+    },
+    "mcp_response": {
+        "task": "text_analysis",
+        "intent": "summarization",
+        "output_type": "structured",
+        "generated_by": "rule-engine-v1"
+    }
+}

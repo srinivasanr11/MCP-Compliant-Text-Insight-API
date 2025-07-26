@@ -1,0 +1,11 @@
+{ 
+  "model_context": { 
+    "task": "text_analysis", 
+    "intent": "summarization + classification", 
+    "user_role": "user", 
+    "language": "en" 
+  }, 
+  "input": { 
+    "text": "The dark mode feature is absolutely brilliant! It's easier on the eyes and looks modern." 
+  } 
+}

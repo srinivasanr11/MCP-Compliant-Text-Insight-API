@@ -1,0 +1,11 @@
+{ 
+"model_context": { 
+"task": "text_analysis", 
+"intent": "emotion-detection", 
+"user_role": "end_user", 
+"language": "en" 
+}, 
+"input": { 
+"text": "I guess the app is okay, but I feel confused using the new settings page." 
+} 
+}

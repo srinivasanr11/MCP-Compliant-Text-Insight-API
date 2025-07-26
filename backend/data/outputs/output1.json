@@ -1,0 +1,14 @@
+{
+    "output": {
+        "summary": null,
+        "category": "Bug",
+        "confidence": 0.92,
+        "message": null
+    },
+    "mcp_response": {
+        "task": "text_analysis",
+        "intent": "classification",
+        "output_type": "structured",
+        "generated_by": "rule-engine-v1"
+    }
+}
